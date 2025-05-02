@@ -1,4 +1,4 @@
-# 🧠 AI Content Summarization
+# 🧠 AI Content Summarization - By: Bashar Shabani
 
 AI Content Summarization is a Node.js REST API that uses Microsoft Azure’s AI Language service to generate extractive summaries from long-form text or web pages. It features analytics logging, live Swagger documentation, and full deployment with PM2 on DigitalOcean.
 
