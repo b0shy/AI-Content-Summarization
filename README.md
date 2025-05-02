@@ -15,6 +15,49 @@ AI Content Summarization is a Node.js REST API that uses Microsoft Azure’s AI 
 - 📄 Built-in Swagger API documentation for testing  
 - ☁️ Deployed on a public server using PM2 and DigitalOcean  
 
+## 🧪 How to Test with Postman
+
+You can test the API using [Postman](https://www.postman.com/downloads/) by following these steps:
+
+### 🔹 Summarize Raw Text
+
+- **Method:** `POST`  
+- **URL:** `http://157.245.90.220:3000/api/summarize-text`  
+- **Headers:**  
+  `Content-Type: application/json`  
+- **Body (raw JSON):**
+
+```json
+{
+  "text": "Artificial Intelligence is a field of study focused on the creation of intelligent machines that work and react like humans. It includes learning, reasoning, and language understanding."
+}
+```
+
+### 🔹 Summarize from URL
+
+- **Method:** `POST`  
+- **URL:** `http://157.245.90.220:3000/api/summarize-url`  
+- **Headers:**  
+  `Content-Type: application/json`  
+- **Body (raw JSON):**
+
+```json
+{
+  "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+}
+```
+
+### ✅ Example Response
+
+```json
+{
+  "summary": "Artificial intelligence (AI) refers to the simulation of human intelligence processes by machines..."
+}
+```
+
+You can also access the Swagger UI for in-browser testing:  
+📄 http://157.245.90.220:3000/api-docs
+
 ## 🛠 How to Run Locally
 
 ### 1. Clone the Repository
@@ -140,7 +183,7 @@ ufw allow 3000
 ```
 
 You can now visit the deployed API at:  
-🌐 http://your-droplet-ip:3000/api-docs
+🌐 http://157.245.90.220:3000/api-docs
 
 ## 🧰 Tech Stack
 
